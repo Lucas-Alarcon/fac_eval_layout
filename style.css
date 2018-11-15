@@ -1,0 +1,65 @@
+body {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+.desktopG, .desktop, .tablette{
+    display: none;
+}
+
+
+@media all and (min-width: 769px) {
+    .block_photo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .img {
+        margin: 5px;
+        width: 45%;
+    }
+
+    .tablette{
+        display: block;
+    }
+
+    .telephone {
+        display: none;
+    }
+}
+
+@media all and (min-width: 970px) {
+    .block_photo {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+    .tablette {
+        display: none;
+    }
+}
+
+@media all and (min-width: 1370px) {
+    .block_photo {
+        margin: 0;
+    }
+
+    .img {
+        width: 15%;
+    }
+
+    .desktopG{
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
